@@ -2,6 +2,12 @@
   padding: 0 2rem;
 }
 
+.container p{
+     whiteSpace:'nowrap';
+      display:'inline';
+}
+
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;

@@ -4,12 +4,13 @@
     padding: 2rem 0;
     justify-content: center;
     align-items: left;
+    display: "inline"
 }
   
 .title{
   font-family: serif;
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 3rem;
   text-transform: uppercase;
 }
