@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 const NavBar = () => {
   return (
     <div className={styles.navBar}>
-      <div className={styles.title}> TAMARA'S OPERA SINGERS SCHOOL</div>
+      <div className={styles.title}>Tamara's Opera singers school</div>
     </div>
   );
 };

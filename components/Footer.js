@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <div className={styles.footer}>
-        Copyright © Tamara's opera singers school
+        Copyright &copy; Tamara's opera singers school
       </div>
     </>
   );
