@@ -1,5 +1,5 @@
-import Footer from "../components/Footer/Footer";
-import NavBar from "../components/NavBar/NavBar";
+import Footer from "../components/Footer";
+import NavBar from "../components/NavBar";
 import Head from "next/head";
 import { CONFIG } from "../utils/consts";
 import "../styles/globals.css";
