@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./Footer.module.css";
-import toss from "../common-consts/toss";
+import { CONFIG } from "../../utils/consts";
 
 const Footer = () => {
   return (
-    <>
-      <div className={styles.footer}>Copyright &copy; {toss}</div>
-    </>
+    <footer className={styles.footer}>
+      Copyright &copy; {new Date().getFullYear()} {CONFIG.website.title}
+    </footer>
   );
 };
 

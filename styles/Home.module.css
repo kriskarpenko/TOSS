@@ -1,12 +1,26 @@
 .container {
-  padding: 0 2rem;
+  display: inline-block;
+  background-color: aqua;
+  white-space: nowrap;
+  max-width: 100%;
 }
 
-.container p{
-     whiteSpace:'nowrap';
-      display:'inline';
+.container p {
+  white-space: wrap;
+  background-color: rgb(188, 59, 59);
+  display: inline;
+  text-align: left;
 }
 
+.imgcontainer {
+  overflow: hidden;
+  margin-right: auto;
+  float: left;
+}
+
+.onOverlay:hover {
+  transform: scale(1.2);
+}
 
 .main {
   min-height: 100vh;
@@ -16,13 +30,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  direction: ltr;
+  padding: 1em;
 }
-
-
-
-
-
-
 
 .title a {
   color: #0070f3;
@@ -40,6 +50,15 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.titleLeft {
+  font-family: serif;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  margin-right: auto;
   text-transform: uppercase;
 }
 
@@ -70,6 +89,9 @@
   flex-wrap: wrap;
   max-width: 800px;
 }
+
+/* .gridContainer {
+} */
 
 .card {
   margin: 1rem;
@@ -102,7 +124,7 @@
 }
 
 .logo {
-  height: 1em;
+  width: 3rem;
   margin-left: 0.5rem;
 }
 

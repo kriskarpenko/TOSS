@@ -1,11 +1,16 @@
+import { useMediaQuery } from "react-responsive";
 import React from "react";
-import toss from "../common-consts/toss";
 import styles from "./NavBar.module.css";
+import NavBarDesktop from "./NavComponents/NavBarDesktop";
+import NavBarMobile from "./NavComponents/NavBarMobile";
+
 const NavBar = () => {
+  const isMobile = useMediaQuery({ query: "(max-width: 720px)" });
+
   return (
-    <div className={styles.navBar}>
-      <div className={styles.title}>{toss}</div>
-    </div>
+    <nav className={styles.navBar}>
+      {isMobile ? <NavBarMobile /> : <NavBarDesktop />}
+    </nav>
   );
 };
 

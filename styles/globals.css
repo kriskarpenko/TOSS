@@ -10,17 +10,31 @@ a {
   color: inherit;
   text-decoration: none;
 }
+a:hover {
+  color: brown;
+  cursor: pointer;
+}
+
+p {
+  margin-block-end: 0rem;
+  margin-block-start: 0rem;
+}
 
 * {
   box-sizing: border-box;
 }
+
+/* img:hover {
+  transform: scale(1.2); 
+  cursor: pointer;
+} */
 
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
   body {
-    color: rgb(0, 0, 0);
-    background: rgb(255, 255, 255);
+    color: rgb(225, 225, 225);
+    background: rgb(0, 0, 0);
   }
 } */

@@ -1,16 +1,36 @@
 .navBar {
-    display: flex;
-    flex: 1;
-    padding: 2rem 0;
-    justify-content: center;
-    align-items: left;
-    display: "inline"
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
 }
-  
-.title{
+
+/* .title {
   font-family: serif;
   margin: 0;
   line-height: 1.15;
   font-size: 3rem;
   text-transform: uppercase;
+} */
+
+.desktop ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.desktop li {
+  flex: 1;
+  list-style: none;
+  margin: 0 0.25rem;
+}
+
+.mobile ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile li {
+  flex: 1;
+  list-style: none;
+  margin: 0.25rem 0;
 }
