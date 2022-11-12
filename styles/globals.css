@@ -11,7 +11,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: brown;
+  color: rgb(186, 150, 102);
   cursor: pointer;
 }
 
