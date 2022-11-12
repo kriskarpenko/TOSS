@@ -1,0 +1,12 @@
+.section,
+.sectionRight,
+.sectionLeft {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.sectionLeft {
+  flex-direction: row-reverse;
+}
