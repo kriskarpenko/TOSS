@@ -7,10 +7,6 @@ import Contact from "../components/Contact/Contact";
 import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
-  const router = useRouter();
-  const linkContact = () => {
-    router.pathname === "./contact" ? null : <Contact />;
-  };
   return (
     <>
       <Head>
@@ -21,7 +17,7 @@ function MyApp({ Component, pageProps }) {
 
       <NavBar />
       <Component {...pageProps} />
-      {linkContact}
+      <Contact />
 
       <Footer />
     </>
