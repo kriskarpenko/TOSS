@@ -3,9 +3,11 @@
   flex-direction: row;
   gap: 1rem;
   justify-content: center;
+  color: #2e2e2e;
 }
 
 .navLogo {
+  margin: auto;
   margin-right: auto;
   margin-left: 2rem;
 }
@@ -19,7 +21,7 @@
 .desktop li {
   flex: 1;
   list-style: none;
-  margin: 0 0.25rem;
+  margin: 0 0.3rem;
 }
 
 /* .desktop li::after {

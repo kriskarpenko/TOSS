@@ -4,8 +4,13 @@ import Head from "next/head";
 import { CONFIG } from "../utils/consts";
 import "../styles/globals.css";
 import Contact from "../components/Contact/Contact";
+import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+  const linkContact = () => {
+    router.pathname === "./contact" ? null : <Contact />;
+  };
   return (
     <>
       <Head>
@@ -16,7 +21,8 @@ function MyApp({ Component, pageProps }) {
 
       <NavBar />
       <Component {...pageProps} />
-      <Contact />
+      {linkContact}
+
       <Footer />
     </>
   );
