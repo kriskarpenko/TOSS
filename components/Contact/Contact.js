@@ -1,17 +1,23 @@
 import React from "react";
 import styles from "./Contact.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
 
-const Contact = () => {
+import Link from "next/link";
+import { useRouter } from "next/router";
+
+const Contact = ({ url }) => {
+  const router = useRouter();
+  // const linkContact = () => {
+  //   return (
+  //     {router.asPath === "./contact" && null}
+  //   );
+  // };
   return (
     <div className={styles.contactButton}>
-      <Link href="./contact">
+      <Link href="/contact">
         <button>
-          <div>
-            <FontAwesomeIcon icon={faPhoneVolume} width="30" />
-          </div>
+          {/* <div>
+            <FontAwesomeIcon icon={faPhoneVolume} width="64" />
+          </div> */}
         </button>
       </Link>
     </div>

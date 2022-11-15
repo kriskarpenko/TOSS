@@ -11,7 +11,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #ba9666;
+  color: #c7be83;
   cursor: pointer;
 }
 
@@ -21,9 +21,6 @@ p {
   color: #2e2e2e;
 }
 
-div {
-  margin: 0 0;
-}
 * {
   box-sizing: border-box;
 }
@@ -69,7 +66,7 @@ button {
 }
 
 button:hover {
-  color: #ba9666;
+  color: #c7be83;
 }
 
 /* img:hover {

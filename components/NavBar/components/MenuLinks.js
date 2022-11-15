@@ -1,10 +1,12 @@
 import Link from "next/link";
-import React from "react";
-import styles from "../NavBar.module.css";
 
-const MenuLinks = () => {
+/**
+ * Renders list with navigation links
+ * @param {string} [className] - css class for ul tag
+ */
+const MenuLinks = ({ className }) => {
   return (
-    <ul className={styles.desktope}>
+    <ul className={className}>
       <li>
         <Link href="/">Home</Link>
       </li>

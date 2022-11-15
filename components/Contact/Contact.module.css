@@ -1,7 +1,5 @@
 .contactButton {
-  display: block;
-  padding: 1%;
-  margin: 2%;
-  display: block;
-  shape-rendering: geometricPrecision;
+  display: flex;
+  justify-content: right;
+  margin: 10px;
 }

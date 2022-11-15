@@ -1,24 +1,11 @@
-import { useMediaQuery } from "react-responsive";
-import React from "react";
-import styles from "./NavBar.module.css";
-import NavBarDesktop from "./NavComponents/NavBarDesktop";
-import NavBarMobile from "./NavComponents/NavBarMobile";
-import Link from "next/link";
+import useMobile from "../../utils/useMobile";
+import NavBarDesktop from "./components/NavBarDesktop";
+import NavBarMobile from "./components/NavBarMobile";
 
 const NavBar = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 720px)" });
+  const isMobile = useMobile();
 
-  return (
-    <nav className={styles.navBar}>
-      <div className={styles.navLogo}>
-        <Link href="./">
-          <img src="./icon.jpeg" width="40" height="40" />
-        </Link>
-      </div>
-
-      {isMobile ? <NavBarMobile /> : <NavBarDesktop />}
-    </nav>
-  );
+  return isMobile ? <NavBarMobile /> : <NavBarDesktop />;
 };
 
 export default NavBar;
