@@ -1,12 +1,39 @@
 .section,
 .sectionRight,
-.sectionLeft {
+.sectionMobile,
+.sectionDesktop {
+  position: relative;
   display: flex;
   flex-direction: row;
   gap: 1rem;
   align-items: center;
+  width: fit-content;
 }
 
 .sectionLeft {
+  position: relative;
+  display: flex;
   flex-direction: row-reverse;
+  gap: 1rem;
+  align-items: center;
+  width: fit-content;
+}
+
+.sectionMobile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.sectionMobile img {
+  min-width: 300px;
+  width: 40%;
+}
+
+.sectionDesktop {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 8rem;
+  max-width: 1000px;
 }
