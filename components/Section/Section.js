@@ -1,45 +1,35 @@
 import useMobile from "../../utils/useMobile";
 import styles from "./Section.module.css";
+import Image from "next/image";
 
-const Section = ({ children, pictureAfterText = false, picture, text }) => {
+const SectionMobile = ({ pictureSrc, text, children }) => {
   return (
-    <div className={styles.section}>
-      {pictureAfterText ? null : picture}
-      {text || children}
-      {pictureAfterText ? picture : null}
+    <div className={styles.wrapper}>
+      {pictureSrc && <img className={styles.pictureMobile} src={pictureSrc} />}
+      <div className={styles.text}>{text || children}</div>
     </div>
   );
 };
 
-const Section2 = ({
-  children,
-  pictureAfterText = false,
-  picture,
-  text,
-  isMobile = false,
-}) => {
-  const mobile = useMobile(isMobile);
+const SectionDesktop = ({ pictureSrc, pictureAfterText, text, children }) => {
   return (
-    <div className={mobile ? styles.sectionMobile : styles.sectionDesktop}>
-      {isMobile && mobile}
-      <p
-        className={pictureAfterText ? styles.sectionLeft : styles.sectionRight}
-      ></p>
-      {picture}
-      {text || children}
-    </div>
-  );
-};
-
-const Section3 = ({ children, pictureAfterText = false, picture, text }) => {
-  return (
-    <p
-      className={styles.section}
-      style={pictureAfterText ? { flexDirection: "row-reverse" } : undefined}
+    <div
+      className={
+        { pictureAfterText } ? styles.pictureAfterText : styles.wrapper
+      }
     >
-      {picture}
-      {text || children}
-    </p>
+      {pictureSrc && <img src={pictureSrc} className={styles.picture} />}
+      <div className={styles.text}>{text || children}</div>
+    </div>
+  );
+};
+
+const Section = (props) => {
+  const isMobile = useMobile();
+  return isMobile ? (
+    <SectionMobile {...props} />
+  ) : (
+    <SectionDesktop {...props} />
   );
 };
 
