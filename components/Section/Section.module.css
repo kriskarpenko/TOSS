@@ -1,12 +1,49 @@
-.section,
-.sectionRight,
-.sectionLeft {
+.wrapper,
+.pictureAfterText {
   display: flex;
-  flex-direction: row;
-  gap: 1rem;
   align-items: center;
+  gap: 1rem;
+  margin: 2rem 0 0 0;
+  justify-content: center;
 }
 
-.sectionLeft {
+.pictureAfterText {
   flex-direction: row-reverse;
+}
+
+.picture {
+  min-height: 400px;
+  min-width: 400px;
+  max-width: 1000px;
+  max-height: 700px;
+}
+
+.pictureMobile {
+  min-height: 100px;
+  min-width: 100px;
+  max-width: 320px;
+  max-height: 320px;
+  object-fit: contain;
+  position: relative;
+}
+
+.text {
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  margin: 1rem;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .wrapper,
+  .pictureAfterText {
+    flex-direction: row;
+  }
 }

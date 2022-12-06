@@ -1,12 +1,35 @@
+import useMobile from "../../utils/useMobile";
 import styles from "./Section.module.css";
+import Image from "next/image";
 
-const Section = ({ children, pictureAfterText = false, picture, text }) => {
+const SectionMobile = ({ pictureSrc, text, children }) => {
   return (
-    <p className={styles.section}>
-      {pictureAfterText ? null : picture}
-      {text || children}
-      {pictureAfterText ? picture : null}
-    </p>
+    <div className={styles.wrapper}>
+      {pictureSrc && <img className={styles.pictureMobile} src={pictureSrc} />}
+      <div className={styles.text}>{text || children}</div>
+    </div>
+  );
+};
+
+const SectionDesktop = ({ pictureSrc, pictureAfterText, text, children }) => {
+  return (
+    <div
+      className={
+        { pictureAfterText } ? styles.pictureAfterText : styles.wrapper
+      }
+    >
+      {pictureSrc && <img src={pictureSrc} className={styles.picture} />}
+      <div className={styles.text}>{text || children}</div>
+    </div>
+  );
+};
+
+const Section = (props) => {
+  const isMobile = useMobile();
+  return isMobile ? (
+    <SectionMobile {...props} />
+  ) : (
+    <SectionDesktop {...props} />
   );
 };
 

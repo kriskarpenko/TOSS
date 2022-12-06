@@ -1,0 +1,18 @@
+.halfEllipse {
+  background-color: #2e2e2e;
+  width: 100%;
+  height: 1rem;
+  border-radius: 50% / 0 0 100% 100%;
+}
+
+.header {
+  background-color: #2e2e2e;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  color: #b0ab89;
+}
