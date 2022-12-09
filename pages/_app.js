@@ -2,7 +2,7 @@ import Footer from "../components/Footer";
 import Head from "next/head";
 import { CONFIG } from "../utils/consts";
 import "../styles/globals.css";
-import Contact from "../components/Contact/Contact";
+import FloatingButton from "../components/FloatingButton/Contact";
 import Header from "../components/Header";
 
 function MyApp({ Component, pageProps }) {
