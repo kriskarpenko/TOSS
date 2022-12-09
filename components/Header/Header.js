@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div>
       <div className={styles.header}>
-        <Link href="./">
+        <Link href="/">
           <AppIcon name="logotype" size={32} />
         </Link>
         <NavBar />
