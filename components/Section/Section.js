@@ -2,23 +2,26 @@ import useMobile from "../../utils/useMobile";
 import styles from "./Section.module.css";
 import Image from "next/image";
 
-const SectionMobile = ({ pictureSrc, text, children }) => {
+const SectionDesktop = ({
+  pictureSrc,
+  pictureAfterText = false,
+  text,
+  children,
+}) => {
   return (
-    <div className={styles.wrapper}>
-      {pictureSrc && <img className={styles.pictureMobile} src={pictureSrc} />}
+    <div
+      className={pictureAfterText ? styles.pictureAfterText : styles.wrapper}
+    >
+      {pictureSrc && <img src={pictureSrc} className={styles.picture} />}
       <div className={styles.text}>{text || children}</div>
     </div>
   );
 };
 
-const SectionDesktop = ({ pictureSrc, pictureAfterText, text, children }) => {
+const SectionMobile = ({ pictureSrc, text, children }) => {
   return (
-    <div
-      className={
-        { pictureAfterText } ? styles.pictureAfterText : styles.wrapper
-      }
-    >
-      {pictureSrc && <img src={pictureSrc} className={styles.picture} />}
+    <div className={styles.wrapper}>
+      {pictureSrc && <img className={styles.pictureMobile} src={pictureSrc} />}
       <div className={styles.text}>{text || children}</div>
     </div>
   );

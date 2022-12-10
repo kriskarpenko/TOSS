@@ -4,6 +4,7 @@ import {
   FaBars,
   FaPhoneVolume,
   FaEnvelope,
+  FaWhatsappSquare,
 } from "react-icons/fa";
 
 const ICONS = {
@@ -12,6 +13,7 @@ const ICONS = {
   menu: FaBars,
   email: FaEnvelope,
   contact: FaPhoneVolume,
+  whatsapp: FaWhatsappSquare,
   logotype: ({ size, title }) => (
     <img
       src="./img/icons/icon.jpeg"
