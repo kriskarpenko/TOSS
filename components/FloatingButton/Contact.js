@@ -1,8 +1,8 @@
-import React from "react";
-import styles from "./Contact.module.css";
-import AppIcon from "../AppIcon";
+import React from 'react';
+import styles from './Contact.module.css';
+import AppIcon from '../AppIcon';
 
-import Link from "next/link";
+import Link from 'next/link';
 
 const FloatingButton = ({ icon, linkUrl }) => {
   return (

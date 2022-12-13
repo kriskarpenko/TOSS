@@ -76,6 +76,9 @@ h2 {
   text-transform: uppercase;
 }
 
+h1 {
+  word-spacing: 0.5rem;
+}
 /* img:hover {
   transform: scale(1.2); 
   cursor: pointer;

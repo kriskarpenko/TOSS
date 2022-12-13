@@ -1,9 +1,8 @@
-import Footer from "../components/Footer";
-import Head from "next/head";
-import { CONFIG } from "../utils/consts";
-import "../styles/globals.css";
-import FloatingButton from "../components/FloatingButton/Contact";
-import Header from "../components/Header";
+import Footer from '../components/Footer';
+import Head from 'next/head';
+import { CONFIG } from '../utils/consts';
+import '../styles/globals.css';
+import Header from '../components/Header';
 
 function MyApp({ Component, pageProps }) {
   return (

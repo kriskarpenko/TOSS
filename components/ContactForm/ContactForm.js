@@ -1,16 +1,9 @@
-import { useCallback, useState } from "react";
-import styles from "./ContactForm.module.css";
-import TextInput from "./TextInput";
+import { useCallback, useState } from 'react';
+import styles from './ContactForm.module.css';
+import TextInput from './TextInput';
 
 function apiSendMessage({ name, email, message }) {
-  console.log(
-    "apiSendMessage() - name:",
-    name,
-    "email:",
-    email,
-    "message:",
-    message
-  );
+  console.log('apiSendMessage() - name:', name, 'email:', email, 'message:', message);
   return Math.random() < 0.5;
 }
 
@@ -18,9 +11,9 @@ const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
   const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
 
   const onInputChange = useCallback((event) => {
@@ -40,27 +33,15 @@ const ContactForm = () => {
     }
   };
 
-  console.log("formState:", formState);
+  console.log('formState:', formState);
 
   return (
     <form className={styles.form} method="GET" onSubmit={onSubmitNew}>
       <h1>Contact us</h1>
       <fieldset className={styles.fieldset}>
-        <TextInput
-          name="name"
-          label="Name"
-          type="text"
-          placeholder="Your name here"
-          onChange={onInputChange}
-        />
+        <TextInput name="name" label="Name" type="text" placeholder="Your name here" onChange={onInputChange} />
 
-        <TextInput
-          name="email"
-          label="Email"
-          type="email"
-          placeholder="Your email here"
-          onChange={onInputChange}
-        />
+        <TextInput name="email" label="Email" type="email" placeholder="Your email here" onChange={onInputChange} />
 
         <TextInput
           isMultiLine

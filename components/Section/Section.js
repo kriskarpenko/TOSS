@@ -1,24 +1,19 @@
-import useMobile from "../../utils/useMobile";
-import styles from "./Section.module.css";
-import Image from "next/image";
+import useMobile from '../../utils/useMobile';
+import styles from './Section.module.css';
 
-const SectionMobile = ({ pictureSrc, text, children }) => {
+export const SectionDesktop = ({ children, pictureAfterText = false, pictureSrc, text }) => {
   return (
-    <div className={styles.wrapper}>
-      {pictureSrc && <img className={styles.pictureMobile} src={pictureSrc} />}
+    <div className={`${styles.wrapper} ${styles.flexRow} ${pictureAfterText && styles.pictureAfterText}`}>
+      {pictureSrc && <img src={pictureSrc} className={styles.picture} />}
       <div className={styles.text}>{text || children}</div>
     </div>
   );
 };
 
-const SectionDesktop = ({ pictureSrc, pictureAfterText, text, children }) => {
+export const SectionMobile = ({ pictureSrc, text, children }) => {
   return (
-    <div
-      className={
-        { pictureAfterText } ? styles.pictureAfterText : styles.wrapper
-      }
-    >
-      {pictureSrc && <img src={pictureSrc} className={styles.picture} />}
+    <div className={styles.wrapper + ' ' + styles.flexColumn}>
+      {pictureSrc && <img className={styles.pictureMobile} src={pictureSrc} />}
       <div className={styles.text}>{text || children}</div>
     </div>
   );
@@ -26,11 +21,7 @@ const SectionDesktop = ({ pictureSrc, pictureAfterText, text, children }) => {
 
 const Section = (props) => {
   const isMobile = useMobile();
-  return isMobile ? (
-    <SectionMobile {...props} />
-  ) : (
-    <SectionDesktop {...props} />
-  );
+  return isMobile ? <SectionMobile {...props} /> : <SectionDesktop {...props} />;
 };
 
 export default Section;

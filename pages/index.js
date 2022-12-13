@@ -1,7 +1,8 @@
-import useMobile from "../utils/useMobile";
-import styles from "../styles/Home.module.css";
-import Section from "../components/Section";
-import Map from "../components/Map/Map";
+import useMobile from '../utils/useMobile';
+import styles from '../styles/Home.module.css';
+import Section from '../components/Section';
+import Map from '../components/Map/Map';
+import { CONFIG } from '../utils/consts';
 
 export default function Home({}) {
   const isMobile = useMobile();
@@ -9,77 +10,68 @@ export default function Home({}) {
   return (
     <div className={styles.content}>
       <Section>
-        <h1>We are</h1>
+        <h1>{CONFIG.website.title}</h1>
       </Section>
 
       <Section pictureSrc="/img/photos/everyOneGarden.jpeg" />
 
-      <Section pictureAfterText pictureSrc="/img/logo.png">
-        A new generation singing school. A place where you can fullfil your
-        dream, of becoming greate singer, with only one year of learning.
+      <Section>
+        A new generation singing school. A place where you can fullfil your dream, of becoming greate singer, with only
+        one year of learning.
       </Section>
+      <div>
+        <Section
+          pictureAfterText
+          pictureSrc="/img/photos/tamara.jpeg"
+          // text="Hello, I am Tamara Tarskikh, a professional Mezzosoprano singer and
+          // vocal coach.
+          // After decades of living the dream of my life though performing in the
+          // biggest theatres of the Europe. I decided to open Tamara’s Opera
+          // Singers’ school, a school which I would like to have when I was at the
+          // begining of my career. The main point of the school is to help young
+          // artists to fulfil their dreams in show business. I offer my knowledge
+          // in signing, timemanagment amd the art of performing via a new
+          // innovative teaching method, that I have discovered."
+        >
+          The founder, Tamara Tarskikh, Mezzosoprano with a brilliant career and Doctor of Communication Psychology,
+          thanks to her long professional experience, offers to her young artists, with passion and creativity,
+        </Section>
+      </div>
 
       <hr />
 
-      <Section
-        text="Our mission is to achieve personal and professional successes with only one year of learning, the goal is to give
+      <Section pictureSrc="/img/photos/tamaraEdward.jpeg">
+        <Section
+          text="Our mission is to achieve personal and professional successes with only one year of learning, the goal is to give
         students maximum knowledge of the Grande Musica showing passion for creativity, introspective growth
         and dissemination of the Art.
         "
-      ></Section>
-
-      <Section
-      // style={
-      //   !isMobile
-      //     ? {
-      //         display: "flex",
-      //         padding: "1.25rem",
-      //         justifyContent: "center",
-      //         alignContent: "center",
-      //       }
-      //     : {
-      //         margin: "2rem",
-      //         display: "flex",
-      //         flexDirection: "collumn",
-      //       }
-      // }
-      >
-        <h2 className={styles.text}>Our goals are:</h2>
+        ></Section>
+        <br />
+        <h2 className={styles.text}>Our vision is:</h2>
         <ul>
-          <li>Concourses & Masterclass</li>
-          <li>Admission to the conservatory</li>
           <li>Theatre performance </li>
+          <li>Concerts</li>
+          <li>Admission to the conservatory</li>
+          <li>Concourses & Masterclass</li>
           <li>Cinema</li>
         </ul>
       </Section>
 
-      <div>
-        <Section pictureAfterText pictureSrc="/img/photos/tamara.jpeg">
-          Hello, I am Tamara Tarskikh, a professional Mezzosoprano singer and
-          vocal coach. <br />
-          After decades of living the dream of my life though performing in the
-          biggest theatres of the Europe. I decided to open Tamara’s Opera
-          Singers’ school, a school which I would like to have when I was at the
-          begining of my career. The main point of the school is to help young
-          artists to fulfil their dreams in show business. I offer my knowledge
-          in signing, timemanagment amd the art of performing via a new
-          innovative teaching method, that I have discovered.
-        </Section>
-      </div>
       <div
         style={
           !isMobile
             ? {
-                display: "flex",
-                flexDirection: "column",
-                padding: "1.25rem",
-                justifyContent: "center",
-                alignContent: "center",
+                display: 'flex',
+                flexDirection: 'column',
+                padding: '1.25rem',
+                justifyContent: 'center',
+                alignContent: 'center',
               }
             : {
-                display: "flex",
-                margin: "2rem",
-                flexDirection: "collumn",
+                display: 'flex',
+                margin: '2rem',
+                flexDirection: 'collumn',
               }
         }
       >

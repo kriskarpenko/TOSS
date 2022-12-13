@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 /**
  * Renders list with navigation links
@@ -9,6 +9,9 @@ const MenuLinks = ({ className }) => {
     <ul className={className}>
       <li>
         <Link href="/">Home</Link>
+      </li>
+      <li>
+        <Link href="/school">School</Link>
       </li>
       <li>
         <Link href="/contact">Contact</Link>
