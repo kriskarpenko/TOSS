@@ -1,8 +1,8 @@
-import React from "react";
-import AppIcon from "../components/AppIcon";
-import useMobile from "../utils/useMobile";
-import Section from "../components/Section";
-import ContactForm from "../components/ContactForm";
+import React from 'react';
+import AppIcon from '../components/AppIcon';
+import useMobile from '../utils/useMobile';
+import Section from '../components/Section';
+import ContactForm from '../components/ContactForm';
 
 const ContactPage = () => {
   const isMobile = useMobile();

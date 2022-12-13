@@ -1,8 +1,8 @@
-import useMobile from "../utils/useMobile";
-import styles from "../styles/Home.module.css";
-import Section from "../components/Section";
-import Map from "../components/Map/Map";
-import { CONFIG } from "../utils/consts";
+import useMobile from '../utils/useMobile';
+import styles from '../styles/Home.module.css';
+import Section from '../components/Section';
+import Map from '../components/Map/Map';
+import { CONFIG } from '../utils/consts';
 
 export default function Home({}) {
   const isMobile = useMobile();
@@ -16,8 +16,8 @@ export default function Home({}) {
       <Section pictureSrc="/img/photos/everyOneGarden.jpeg" />
 
       <Section>
-        A new generation singing school. A place where you can fullfil your
-        dream, of becoming greate singer, with only one year of learning.
+        A new generation singing school. A place where you can fullfil your dream, of becoming greate singer, with only
+        one year of learning.
       </Section>
       <div>
         <Section
@@ -33,15 +33,14 @@ export default function Home({}) {
           // in signing, timemanagment amd the art of performing via a new
           // innovative teaching method, that I have discovered."
         >
-          The founder, Tamara Tarskikh, Mezzosoprano with a brilliant career and
-          Doctor of Communication Psychology, thanks to her long professional
-          experience, offers to her young artists, with passion and creativity,
+          The founder, Tamara Tarskikh, Mezzosoprano with a brilliant career and Doctor of Communication Psychology,
+          thanks to her long professional experience, offers to her young artists, with passion and creativity,
         </Section>
       </div>
 
       <hr />
 
-      <Section pictureSrc="/img/photos/studia.jpeg">
+      <Section pictureSrc="/img/photos/tamaraEdward.jpeg">
         <Section
           text="Our mission is to achieve personal and professional successes with only one year of learning, the goal is to give
         students maximum knowledge of the Grande Musica showing passion for creativity, introspective growth
@@ -49,11 +48,12 @@ export default function Home({}) {
         "
         ></Section>
         <br />
-        <h2 className={styles.text}>Our goals are:</h2>
+        <h2 className={styles.text}>Our vision is:</h2>
         <ul>
-          <li>Concourses & Masterclass</li>
-          <li>Admission to the conservatory</li>
           <li>Theatre performance </li>
+          <li>Concerts</li>
+          <li>Admission to the conservatory</li>
+          <li>Concourses & Masterclass</li>
           <li>Cinema</li>
         </ul>
       </Section>
@@ -62,16 +62,16 @@ export default function Home({}) {
         style={
           !isMobile
             ? {
-                display: "flex",
-                flexDirection: "column",
-                padding: "1.25rem",
-                justifyContent: "center",
-                alignContent: "center",
+                display: 'flex',
+                flexDirection: 'column',
+                padding: '1.25rem',
+                justifyContent: 'center',
+                alignContent: 'center',
               }
             : {
-                display: "flex",
-                margin: "2rem",
-                flexDirection: "collumn",
+                display: 'flex',
+                margin: '2rem',
+                flexDirection: 'collumn',
               }
         }
       >

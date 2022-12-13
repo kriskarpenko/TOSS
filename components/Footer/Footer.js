@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "./Footer.module.css";
-import { CONFIG } from "../../utils/consts";
+import React from 'react';
+import styles from './Footer.module.css';
+import { CONFIG } from '../../utils/consts';
 
 const Footer = () => {
   return (

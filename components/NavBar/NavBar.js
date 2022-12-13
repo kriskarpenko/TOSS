@@ -1,6 +1,6 @@
-import useMobile from "../../utils/useMobile";
-import NavBarDesktop from "./components/NavBarDesktop";
-import NavBarMobile from "./components/NavBarMobile";
+import useMobile from '../../utils/useMobile';
+import NavBarDesktop from './components/NavBarDesktop';
+import NavBarMobile from './components/NavBarMobile';
 
 const NavBar = () => {
   const isMobile = useMobile();

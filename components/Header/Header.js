@@ -1,7 +1,7 @@
-import NavBar from "../NavBar";
-import Link from "next/link";
-import styles from "./Header.module.css";
-import AppIcon from "../AppIcon";
+import NavBar from '../NavBar';
+import Link from 'next/link';
+import styles from './Header.module.css';
+import AppIcon from '../AppIcon';
 
 const Header = () => {
   return (

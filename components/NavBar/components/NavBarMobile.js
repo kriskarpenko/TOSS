@@ -1,18 +1,16 @@
-import { useCallback, useState } from "react";
-import MenuLinks from "./MenuLinks";
-import styles from "./NavBarMobile.module.css";
-import { FaBars, FaTimes } from "react-icons/fa";
-import styled from "styled-components";
+import { useCallback, useState } from 'react';
+import MenuLinks from './MenuLinks';
+import styles from './NavBarMobile.module.css';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import styled from 'styled-components';
 
 const NavBarMobile = () => {
-  const [menuOpen, setMenuOpen] = useState(
-    localStorage.getItem("menuOpen") ?? false
-  );
+  const [menuOpen, setMenuOpen] = useState(localStorage.getItem('menuOpen') ?? false);
 
   const onMenuTogle = useCallback(() => {
     setMenuOpen((oldValue) => {
       const newValue = !oldValue;
-      localStorage.setItem("menuOpen", newValue);
+      localStorage.setItem('menuOpen', newValue);
       return newValue;
     });
   }, []);

@@ -1,4 +1,4 @@
-import useMobile from "../../utils/useMobile";
+import useMobile from '../../utils/useMobile';
 
 const Map = ({ mapUrl }) => {
   const isMobile = useMobile();
