@@ -61,13 +61,14 @@ export default function Home({}) {
       <Section pictureSrc="../img/photos/maestro.jpeg" pictureAfterText>
         <h2> Maestro</h2>
         Maestro Francesco Barbagelata has performed at the Teatro Carlo Felice in Genoa with the Paganini Orchestra in
-        O.Respighi's "Fontane di Roma", "Ma mère l'oye" by M.Ravel, "Three pieces for youth orchestra" by G Turchi, "The
-        firebird" by I. Stravinsky alternating piano and celesta. He collaborated for several years in the stage art
-        course held by the director Lorenza Codignola and in the "Vocal laboratory of Chamber Music", held by Soprano
-        Carmen Vilalta and Maestro Massimiliano Damerini at the Conservatory N. Paganini. He has been a master
-        collaborator in specialization courses held by Barbara Frittoli, Fiorenza Cedolins, Annunziata Lia Lantieri,
-        Luciana Serra, Alessandra Rossi, Irene Cerboncini, Linda Campanella, Bernadette Manca di Nissa, Raffaella
-        Ambrosino, Ugo Benelli, Andrea Elena, Luis Alva, Paolo Montarsolo and Claudio Ottino.
+        O.Respighi`&apos;`s `&lsquo;`Fontane di Roma`&lsquo;`, `&lsquo;`Ma mère l`&apos;`oye`&lsquo;` by M.Ravel,
+        `&lsquo;`Three pieces for youth orchestra`&lsquo;` by G Turchi, `&lsquo;`The firebird`&lsquo;` by I. Stravinsky
+        alternating piano and celesta. He collaborated for several years in the stage art course held by the director
+        Lorenza Codignola and in the `&lsquo;`Vocal laboratory of Chamber Music`&lsquo;`, held by Soprano Carmen Vilalta
+        and Maestro Massimiliano Damerini at the Conservatory N. Paganini. He has been a master collaborator in
+        specialization courses held by Barbara Frittoli, Fiorenza Cedolins, Annunziata Lia Lantieri, Luciana Serra,
+        Alessandra Rossi, Irene Cerboncini, Linda Campanella, Bernadette Manca di Nissa, Raffaella Ambrosino, Ugo
+        Benelli, Andrea Elena, Luis Alva, Paolo Montarsolo and Claudio Ottino.
       </Section>
 
       <div
