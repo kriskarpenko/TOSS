@@ -120,9 +120,9 @@ export default function Home({}) {
           Francesco Barbagelata, born in Genoa in 1979, graduated with full marks in 1999 under the guidance of Maestro
           Franco Trabucco at the N. Paganini Conservatory in Genoa, where he also undertook the study of composition
           with Maestro Luigi Giachino and attended (from 2001 to 2003) the specialization courses for Master
-          collaborators as part of the "Post diploma specialization courses held by M ° Riccardo Marsano and the&quot;
-          Music and image &quot;course held by M ° Carlo Savina (director and arranger of the music de &quot;The
-          Godfather&quot).
+          collaborators as part of the &quot;Post diploma specialization courses held by M ° Riccardo Marsano and
+          the&quot; Music and image &quot;course held by M ° Carlo Savina (director and arranger of the music de
+          &quot;The Godfather&quot).
           <br />
           <p> </p>
           <br />
