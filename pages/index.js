@@ -37,7 +37,7 @@ export default function Home({}) {
         </Section>
         <Section>
           <h4>Practice of the vocal repertoire </h4>
-          The course aims at acquiring specific awareness of one's vocal peculiarities and technical-expressive
+          The course aims at acquiring specific awareness of one&apos;s vocal peculiarities and technical-expressive
           abilities, built through a careful choice of the repertoire, with particular attention to phrasing, correct
           pronunciation and recitation of the text, adherence to the various musical and textual characteristics of the
           music sheet, and care for the performance and aesthetic aspects of traditions.
@@ -62,8 +62,8 @@ export default function Home({}) {
           performance and psychological well- being in singers. Singing is considered as a pure musical element which
           affects positively on the soul. Those who sing are able to balance, control and shake their inner world!
           <br />
-          *** T. Tarskikh "the art of music and the development of the emotional, cognitive and psychological aspects of
-          the individual / Baccalaureato thesis in Psychology of Communication.
+          *** T. Tarskikh &quot;the art of music and the development of the emotional, cognitive and psychological
+          aspects of the individual / Baccalaureato thesis in Psychology of Communication.
           <br />
           Opera singers are required to maintain a strong motivation and a capacity for self-regulation to cope with the
           stress and anxiety related to working conditions and psychological pressures.
@@ -111,24 +111,27 @@ export default function Home({}) {
           Francesco Barbagelata, born in Genoa in 1979, graduated with full marks in 1999 under the guidance of Maestro
           Franco Trabucco at the N. Paganini Conservatory in Genoa, where he also undertook the study of composition
           with Maestro Luigi Giachino and attended (from 2001 to 2003) the specialization courses for Master
-          collaborators as part of the "Post diploma specialization courses held by M ° Riccardo Marsano and the" Music
-          and image "course held by M ° Carlo Savina (director and arranger of the music de "The Godfather").
+          collaborators as part of the &quot;Post diploma specialization courses held by M ° Riccardo Marsano and
+          the&quot; Music and image &quot;course held by M ° Carlo Savina (director and arranger of the music de
+          &quot;The Godfather&quot;).
           <br />
           <p> </p>
           <br />
           Francesco Barbagelata, born in Genoa in 1979, graduated with full marks in 1999 under the guidance of Maestro
           Franco Trabucco at the N. Paganini Conservatory in Genoa, where he also undertook the study of composition
           with Maestro Luigi Giachino and attended (from 2001 to 2003) the specialization courses for Master
-          collaborators as part of the "Post diploma specialization courses held by M ° Riccardo Marsano and the" Music
-          and image "course held by M ° Carlo Savina (director and arranger of the music de "The Godfather").
+          collaborators as part of the "Post diploma specialization courses held by M ° Riccardo Marsano and the&quot;
+          Music and image &quot;course held by M ° Carlo Savina (director and arranger of the music de &quot;The
+          Godfather&quot).
           <br />
           <p> </p>
           <br />
           Francesco Barbagelata, born in Genoa in 1979, graduated with full marks in 1999 under the guidance of Maestro
           Franco Trabucco at the N. Paganini Conservatory in Genoa, where he also undertook the study of composition
           with Maestro Luigi Giachino and attended (from 2001 to 2003) the specialization courses for Master
-          collaborators as part of the "Post diploma specialization courses held by M ° Riccardo Marsano and the" Music
-          and image "course held by M ° Carlo Savina (director and arranger of the music de "The Godfather").
+          collaborators as part of the &quot;Post diploma specialization courses held by M ° Riccardo Marsano and
+          the&quot; Music and image &quot; course held by M ° Carlo Savina (director and arranger of the music de
+          &quot;The Godfather&quot;).
         </Section>
       </div>
       <div
