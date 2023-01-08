@@ -3,13 +3,14 @@ import styles from '../styles/Home.module.css';
 import Section from '../components/Section';
 import Map from '../components/Map/Map';
 import { CONFIG } from '../utils/consts';
+import Card from '../components/Card';
 
 export default function Home({}) {
   const isMobile = useMobile();
 
   return (
     <div className={styles.content}>
-      <div id="introduction">
+      <div id="introduction" className="wrapper">
         <Section>
           <h1>{CONFIG.website.title}</h1>A new generation singing school. A place where you can fullfil your dream with
           only one year of learning.
@@ -105,33 +106,42 @@ export default function Home({}) {
         </Section>
         <hr />
       </div>
-      <div id="maestro">
-        <Section pictureSrc="../img/photos/maestro.jpeg" pictureAfterText>
+      <div
+        id="stuff"
+        style={
+          isMobile
+            ? { display: 'flex', flexDirection: 'column' }
+            : { display: 'flex', flexDirection: 'row', placeContent: 'center', alignItems: 'baseline' }
+        }
+      >
+        <Section>
           <h2> Maestro</h2>
-          Francesco Barbagelata, born in Genoa in 1979, graduated with full marks in 1999 under the guidance of Maestro
-          Franco Trabucco at the N. Paganini Conservatory in Genoa, where he also undertook the study of composition
-          with Maestro Luigi Giachino and attended (from 2001 to 2003) the specialization courses for Master
-          collaborators as part of the &quot;Post diploma specialization courses held by M ° Riccardo Marsano and
-          the&quot; Music and image &quot;course held by M ° Carlo Savina (director and arranger of the music de
-          &quot;The Godfather&quot;).
-          <br />
-          <p> </p>
-          <br />
-          Francesco Barbagelata, born in Genoa in 1979, graduated with full marks in 1999 under the guidance of Maestro
-          Franco Trabucco at the N. Paganini Conservatory in Genoa, where he also undertook the study of composition
-          with Maestro Luigi Giachino and attended (from 2001 to 2003) the specialization courses for Master
-          collaborators as part of the &quot;Post diploma specialization courses held by M ° Riccardo Marsano and
-          the&quot; Music and image &quot;course held by M ° Carlo Savina (director and arranger of the music de
-          &quot;The Godfather&quot).
-          <br />
-          <p> </p>
-          <br />
-          Francesco Barbagelata, born in Genoa in 1979, graduated with full marks in 1999 under the guidance of Maestro
-          Franco Trabucco at the N. Paganini Conservatory in Genoa, where he also undertook the study of composition
-          with Maestro Luigi Giachino and attended (from 2001 to 2003) the specialization courses for Master
-          collaborators as part of the &quot;Post diploma specialization courses held by M ° Riccardo Marsano and
-          the&quot; Music and image &quot; course held by M ° Carlo Savina (director and arranger of the music de
-          &quot;The Godfather&quot;).
+          <Card pictureSrc="../img/photos/maestro.jpeg">
+            Francesco Barbagelata, he has been collaborating master and stage music director for the Puccini Festival
+            Foundation since 2016 and professor of study of the score at the Academy of High Specialization for Opera
+            Singers and Master Collaborators of the Puccini Repertoire.
+            <br />
+            <p> </p>
+            <br />
+            He is Choir Master and Stage Music Director of the Montenegrin National Theater in Podgorica. He is
+            professor of piano accompaniment at the R.Franci Institute of Higher Music Studies in Siena and the L.
+            Boccherini Institute of Higher Music Studies in Lucca. He was a teacher of piano accompaniment for the
+            academic year 2019-20 at the G.B.Martini Conservatory of Bologna.
+            <br />
+          </Card>
+        </Section>
+        <Section>
+          <h2> Vocal Couch</h2>
+          <Card pictureSrc="../img/photos/tatiana.jpeg">
+            Tatiana Anisimova had finished the Odesa State conservatory by the name of A. V. Negdanova in 1992.Tatiana
+            Anisimova was adopted in the collective of the Odessa State Academic opera and ballet house at the same
+            year. She participated in the Maiden International competition by the name of M. V. Lysenko, where she
+            became the winner of the Maiden premium and the owner of Grand Prix.
+            <br />
+            In 1997 she took part in statement of opera “ Cavaleria rusticana”, where she starred Santuzzi in
+            Las-Palmas, Spain.
+            <br />
+          </Card>
         </Section>
       </div>
       <div
@@ -154,7 +164,7 @@ export default function Home({}) {
       >
         <Section>
           <h2>We are here</h2>
-          <Map mapUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2875.526466248342!2d8.016909315272715!3d43.886361879114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d26c26acfe1575%3A0x33cd25671e40d33d!2sVia%20delle%20Valli%2C%2058%2C%2018100%20Imperia%20IM!5e0!3m2!1sen!2sit!4v1672879586958!5m2!1sen!2sit" />
+          <Map mapUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2875.526484549455!2d8.019124!3d43.8863615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d26d458b28d997%3A0x6bcb6afd3e36f8a1!2sTamara&#39;s%20Opera%20Singers%20School!5e0!3m2!1sen!2sit!4v1673052579290!5m2!1sen!2sit" />
         </Section>
       </div>
     </div>

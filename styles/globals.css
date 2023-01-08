@@ -83,6 +83,11 @@ h1 {
   word-spacing: 0.5rem;
   line-height: 2.5rem;
 }
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 /* img:hover {
   transform: scale(1.2); 
   cursor: pointer;
