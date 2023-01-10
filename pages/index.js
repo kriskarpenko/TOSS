@@ -110,7 +110,7 @@ export default function Home({}) {
         id="stuff"
         style={
           isMobile
-            ? { display: 'flex', flexDirection: 'column' }
+            ? { display: 'flex', flexDirection: 'column', maxWidth: '320' }
             : { display: 'flex', flexDirection: 'row', placeContent: 'center', alignItems: 'baseline' }
         }
       >
