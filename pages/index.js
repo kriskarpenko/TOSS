@@ -1,5 +1,4 @@
 import useMobile from '../utils/useMobile';
-import styles from '../styles/Home.module.css';
 import Section from '../components/Section';
 import Map from '../components/Map/Map';
 import { CONFIG } from '../utils/consts';
@@ -9,7 +8,7 @@ export default function Home({}) {
   const isMobile = useMobile();
 
   return (
-    <div className={styles.content}>
+    <div>
       <div id="introduction">
         <Section>
           <h1>{CONFIG.website.title}</h1>
@@ -28,7 +27,7 @@ export default function Home({}) {
       <hr />
       <div id="information">
         <Section>
-          <h3 className={styles.text}>Training offers:</h3>
+          <h3>Training offers:</h3>
           <ul>
             <li>Opera singing, modern singing.</li>
             <li>Stage art</li>
@@ -107,7 +106,7 @@ export default function Home({}) {
             give students maximum knowledge of the Grande Musica showing passion for creativity, introspective growth
             and dissemination of the Art.
           </p>
-          <h3 className={styles.text}>Our vision is:</h3>
+          <h3>Our vision is:</h3>
           <ul>
             <li>Theatre performance</li>
             <li>Concerts</li>
@@ -118,81 +117,39 @@ export default function Home({}) {
         </Section>
       </div>
       <hr />
-      <div
-        id="stuff"
-        style={
-          isMobile
-            ? { display: 'flex', flexDirection: 'column', maxWidth: '320' }
-            : { display: 'flex', flexDirection: 'row', placeContent: 'center', alignItems: 'baseline' }
-        }
-      >
-        <Section>
+      <div id="staff">
+        <Section pictureSrc="/img/photos/maestro.jpeg">
           <h2> Maestro</h2>
-          <Card pictureSrc="/img/photos/maestro.jpeg">
-            <p>
-              Francesco Barbagelata, he has been collaborating master and stage music director for the Puccini Festival
-              Foundation since 2016 and professor of study of the score at the Academy of High Specialization for Opera
-              Singers and Master Collaborators of the Puccini Repertoire.
-            </p>
-            <p>
-              He is Choir Master and Stage Music Director of the Montenegrin National Theater in Podgorica. He is
-              professor of piano accompaniment at the R.Franci Institute of Higher Music Studies in Siena and the L.
-              Boccherini Institute of Higher Music Studies in Lucca. He was a teacher of piano accompaniment for the
-              academic year 2019-20 at the G.B.Martini Conservatory of Bologna.
-            </p>
-          </Card>
+
+          <p>
+            Francesco Barbagelata, he has been collaborating master and stage music director for the Puccini Festival
+            Foundation since 2016 and professor of study of the score at the Academy of High Specialization for Opera
+            Singers and Master Collaborators of the Puccini Repertoire.
+          </p>
+          <p>
+            He is Choir Master and Stage Music Director of the Montenegrin National Theater in Podgorica. He is
+            professor of piano accompaniment at the R.Franci Institute of Higher Music Studies in Siena and the L.
+            Boccherini Institute of Higher Music Studies in Lucca. He was a teacher of piano accompaniment for the
+            academic year 2019-20 at the G.B.Martini Conservatory of Bologna.
+          </p>
         </Section>
-        <Section>
+        <Section pictureSrc="/img/photos/tatiana.jpeg">
           <h2> Vocal Couch</h2>
-          <Card pictureSrc="/img/photos/tatiana.jpeg">
-            <p>
-              Tatiana Anisimova had finished the Odesa State conservatory by the name of A. V. Negdanova in 1992.Tatiana
-              Anisimova was adopted in the collective of the Odessa State Academic opera and ballet house at the same
-              year. She participated in the Maiden International competition by the name of M. V. Lysenko, where she
-              became the winner of the Maiden premium and the owner of Grand Prix.
-            </p>
-            <p>
-              In 1997 she took part in statement of opera &quot;Cavaleria rusticana&quot;, where she starred Santuzzi in
-              Las-Palmas, Spain.
-            </p>
-          </Card>
-          <Card pictureSrc="/img/photos/maestro.jpeg">
-            <p>
-              Francesco Barbagelata, he has been collaborating master and stage music director for the Puccini Festival
-              Foundation since 2016 and professor of study of the score at the Academy of High Specialization for Opera
-              Singers and Master Collaborators of the Puccini Repertoire.
-            </p>
-            <p>
-              He is Choir Master and Stage Music Director of the Montenegrin National Theater in Podgorica. He is
-              professor of piano accompaniment at the R.Franci Institute of Higher Music Studies in Siena and the L.
-              Boccherini Institute of Higher Music Studies in Lucca. He was a teacher of piano accompaniment for the
-              academic year 2019-20 at the G.B.Martini Conservatory of Bologna.
-            </p>
-          </Card>
+          <p>
+            Tatiana Anisimova had finished the Odesa State conservatory by the name of A. V. Negdanova in 1992.Tatiana
+            Anisimova was adopted in the collective of the Odessa State Academic opera and ballet house at the same
+            year. She participated in the Maiden International competition by the name of M. V. Lysenko, where she
+            became the winner of the Maiden premium and the owner of Grand Prix.
+          </p>
+          <p>
+            In 1997 she took part in statement of opera &quot;Cavaleria rusticana&quot;, where she starred Santuzzi in
+            Las-Palmas, Spain.
+          </p>
         </Section>
       </div>
-      <div
-        id="map"
-        style={
-          !isMobile
-            ? {
-                display: 'flex',
-                flexDirection: 'column',
-                padding: '1.25rem',
-                justifyContent: 'center',
-                alignContent: 'center',
-              }
-            : {
-                display: 'flex',
-                margin: '2rem',
-                flexDirection: 'collumn',
-              }
-        }
-      >
-        <Section>
-          <h2>We are here</h2>
-          <Map mapUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2875.526484549455!2d8.019124!3d43.8863615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d26d458b28d997%3A0x6bcb6afd3e36f8a1!2sTamara&#39;s%20Opera%20Singers%20School!5e0!3m2!1sen!2sit!4v1673052579290!5m2!1sen!2sit" />
-        </Section>
+      <div id="map">
+        <h2>We are here</h2>
+        <Map />
       </div>
     </div>
   );

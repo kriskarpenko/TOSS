@@ -18,7 +18,9 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <Header />
-      <Component {...pageProps} />
+      <div className="content-wrapper">
+        <Component {...pageProps} />
+      </div>
 
       <Footer />
     </>

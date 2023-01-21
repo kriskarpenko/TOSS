@@ -34,7 +34,10 @@ h2 {
   line-height: 2rem;
 }
 
-
+.content-wrapper{
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
 /* @media (prefers-color-scheme: dark) {
   html {
