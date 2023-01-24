@@ -39,6 +39,10 @@ h2 {
   margin: 0 auto;
 }
 
+iframe{
+  display: flex;
+  min-width: 300px;
+}
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

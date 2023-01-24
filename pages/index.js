@@ -118,7 +118,7 @@ export default function Home({}) {
       </div>
       <hr />
       <div id="staff">
-        <Section pictureSrc="/img/photos/maestro.jpeg">
+        <Section pictureSrc="/img/photos/maestro.jpeg" pictureAfterText>
           <h2> Maestro</h2>
 
           <p>
@@ -136,14 +136,15 @@ export default function Home({}) {
         <Section pictureSrc="/img/photos/tatiana.jpeg">
           <h2> Vocal Couch</h2>
           <p>
-            Tatiana Anisimova had finished the Odesa State conservatory by the name of A. V. Negdanova in 1992.Tatiana
-            Anisimova was adopted in the collective of the Odessa State Academic opera and ballet house at the same
-            year. She participated in the Maiden International competition by the name of M. V. Lysenko, where she
-            became the winner of the Maiden premium and the owner of Grand Prix.
+            Tatyana Anisimova had finished the Odessa State conservatory by the name of A. V. Negdanova by the class of
+            professor G. A. Polivanova in 1992. Tatiana Anisimova was adopted in the collective of the Odessa State
+            Academic opera and ballet house at the same year.
           </p>
           <p>
-            In 1997 she took part in statement of opera &quot;Cavaleria rusticana&quot;, where she starred Santuzzi in
-            Las-Palmas, Spain.
+            Participation at theatres of Ukraine: Kiev, Lvov. She took part in a structure of the Ukrainian Delegacy
+            “Mission of the Peace” in 1993. In 1995 the president of Ukraine L. Kuchma assigned her the rank “ The
+            Honored Artist Of Ukraine” . In 1996 - participated in competition of Alfred Kraus. She had taken the third
+            place . She also took the second place on competition of opera singers in Bilbao, Spain.
           </p>
         </Section>
       </div>
