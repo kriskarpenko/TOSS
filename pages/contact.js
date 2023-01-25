@@ -14,7 +14,9 @@ const ContactPage = () => {
       <ContactForm />
       <div>
         <Section>
-          <AppIcon name="whatsapp" size={32} /> +393477865383 <br />
+          <AppIcon name="whatsapp" size={32} /> +393477865383
+          <br />
+          <AppIcon name="email" size={32} /> Oltreilteatro@gmail.com
         </Section>
       </div>
     </div>

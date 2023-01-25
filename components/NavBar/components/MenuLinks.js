@@ -11,6 +11,9 @@ const MenuLinks = ({ className }) => {
         <Link href="/">Home</Link>
       </li>
       <li>
+        <Link href="/events">Events</Link>
+      </li>
+      <li>
         <Link href="/contact">Contact</Link>
       </li>
     </ul>

@@ -19,7 +19,7 @@
 }
 
 .picture {
-  min-height: 400px;
+  min-height: 300px;
   min-width: 400px;
   max-width: 1000px;
   max-height: 700px;
@@ -42,14 +42,7 @@
   overflow-wrap: anywhere;
 }
 
-/* @media only screen and (max-width: 600px) {
-  .wrapper {
-    flex-direction: column;
-  }
+.text p {
+  margin-block-end: 1.5rem;
+  margin-block-start: 0;
 }
-
-@media only screen and (min-width: 601px) {
-  .wrapper {
-    flex-direction: row;
-  }
-} */

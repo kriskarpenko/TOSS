@@ -7,8 +7,10 @@
 }
 
 .menuButton {
-  width: 24px;
   margin: 0.5rem;
+  background-color: transparent;
+  border: 0;
+  color: #aaa;
 }
 
 .menuLinks {

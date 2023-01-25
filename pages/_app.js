@@ -16,8 +16,11 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
+
       <Header />
-      <Component {...pageProps} />
+      <div className="content-wrapper">
+        <Component {...pageProps} />
+      </div>
 
       <Footer />
     </>
