@@ -121,6 +121,7 @@ export default function Home({}) {
         <Section pictureSrc="/img/photos/maestro.jpeg" pictureAfterText>
           <h2> Maestro</h2>
 
+
           <p>
             Francesco Barbagelata, he has been collaborating master and stage music director for the Puccini Festival
             Foundation since 2016 and professor of study of the score at the Academy of High Specialization for Opera
@@ -132,6 +133,7 @@ export default function Home({}) {
             Boccherini Institute of Higher Music Studies in Lucca. He was a teacher of piano accompaniment for the
             academic year 2019-20 at the G.B.Martini Conservatory of Bologna.
           </p>
+
         </Section>
         <Section pictureSrc="/img/photos/tatiana.jpeg">
           <h2> Vocal Couch</h2>

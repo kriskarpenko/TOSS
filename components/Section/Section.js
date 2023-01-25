@@ -3,7 +3,7 @@ import styles from './Section.module.css';
 
 export const SectionDesktop = ({ children, pictureAfterText = false, pictureSrc, text }) => {
   return (
-    <div className={`${styles.wrapper} ${styles.flexRow} ${pictureAfterText && styles.pictureAfterText}`}>
+    <div className={`${styles.wrapper} ${styles.flexRow} ${pictureAfterText ? styles.pictureAfterText : ''}`}>
       {pictureSrc && <img src={pictureSrc} className={styles.picture} />}
       <div className={styles.text}>{text || children}</div>
     </div>

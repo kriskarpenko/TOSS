@@ -1,6 +1,6 @@
 {
   "name": "toss",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -22,8 +22,12 @@
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
     "prettier": "^2.8.1"
   }
 }
