@@ -6,3 +6,7 @@
   text-align: center;
   gap: 1rem;
 }
+
+.footer a {
+  color: #b0ab89;
+}

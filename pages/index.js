@@ -2,7 +2,6 @@ import useMobile from '../utils/useMobile';
 import Section from '../components/Section';
 import Map from '../components/Map/Map';
 import { CONFIG } from '../utils/consts';
-import Card from '../components/Card';
 
 export default function Home({}) {
   const isMobile = useMobile();
@@ -117,10 +116,9 @@ export default function Home({}) {
         </Section>
       </div>
       <hr />
-      <div id="staff">
+      <div className="staff">
         <Section pictureSrc="/img/photos/maestro.jpeg" pictureAfterText>
           <h2> Maestro</h2>
-
 
           <p>
             Francesco Barbagelata, he has been collaborating master and stage music director for the Puccini Festival
@@ -133,7 +131,6 @@ export default function Home({}) {
             Boccherini Institute of Higher Music Studies in Lucca. He was a teacher of piano accompaniment for the
             academic year 2019-20 at the G.B.Martini Conservatory of Bologna.
           </p>
-
         </Section>
         <Section pictureSrc="/img/photos/tatiana.jpeg">
           <h2> Vocal Couch</h2>
@@ -147,6 +144,16 @@ export default function Home({}) {
             “Mission of the Peace” in 1993. In 1995 the president of Ukraine L. Kuchma assigned her the rank “ The
             Honored Artist Of Ukraine” . In 1996 - participated in competition of Alfred Kraus. She had taken the third
             place . She also took the second place on competition of opera singers in Bilbao, Spain.
+          </p>
+        </Section>
+        <Section pictureSrc="/img/photos/yulia.png" pictureAfterText>
+          <h2> Time management</h2>
+          <p>
+            Yuliya Lyashuk is a writer and poet, she has successfully published 8 books. Yulia has founded an online
+            edition of Coffee Time Journal - a channel of creativity, creation, vision, expansion, inspiration and new
+            bold ideas. She is a welcomed speaker and motivator on forums of various formats. Yulia is an author and
+            trainer of the personal growth program for the online coache&apos;s tour called &quot;New Plank&quot;.
+            Author and coach of the programme called “Goal Setting and Time Management”.
           </p>
         </Section>
       </div>
