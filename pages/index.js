@@ -153,7 +153,7 @@ export default function Home({}) {
             edition of Coffee Time Journal - a channel of creativity, creation, vision, expansion, inspiration and new
             bold ideas. She is a welcomed speaker and motivator on forums of various formats. Yulia is an author and
             trainer of the personal growth program for the online coache&apos;s tour called &quot;New Plank&quot;.
-            Author and coach of the programme called “Goal Setting and Time Management”.
+            Author and coach of the programme called &quot;Goal Setting and Time Management&quot;.
           </p>
         </Section>
       </div>
