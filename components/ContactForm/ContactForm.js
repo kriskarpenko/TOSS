@@ -73,7 +73,7 @@ const ContactForm = () => {
 
   return (
     <form className={styles.form} onSubmit={onFormSubmit}>
-      <h1>Contact us</h1>
+      <h1>Message us right here</h1>
       <fieldset className={styles.fieldset}>
         {/* <TextInput name="name" label="Name" type="text" placeholder="Your name here" onChange={onInputChange} /> */}
 

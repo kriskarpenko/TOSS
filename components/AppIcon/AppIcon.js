@@ -1,15 +1,24 @@
-import { FaSearch, FaSpider, FaBars, FaPhoneVolume, FaEnvelope, FaWhatsappSquare } from 'react-icons/fa';
+import {
+  FaSearch,
+  FaSpider,
+  FaBars,
+  FaPhoneVolume,
+  FaEnvelope,
+  FaWhatsappSquare,
+  FaFacebookSquare,
+} from 'react-icons/fa';
 
 const ICONS = {
-  default: FaSpider,
-  search: FaSearch,
-  menu: FaBars,
-  email: FaEnvelope,
   contact: FaPhoneVolume,
-  whatsapp: FaWhatsappSquare,
+  default: FaSpider,
+  email: FaEnvelope,
+  facebook: FaFacebookSquare,
   logotype: ({ size, title }) => (
     <img src="./img/icons/icon.jpeg" width={size} height={size} title={title} alt={title} />
   ),
+  menu: FaBars,
+  search: FaSearch,
+  whatsapp: FaWhatsappSquare,
 };
 
 const AppIcon = ({ name = 'default', size = 16, ...restOfProps }) => {
