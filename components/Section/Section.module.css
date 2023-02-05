@@ -4,6 +4,7 @@
   gap: 1rem;
   margin-top: 1rem;
   justify-content: center;
+  contain: content;
 }
 
 .flexColumn {
@@ -23,6 +24,7 @@
   min-width: 400px;
   max-width: 1000px;
   max-height: 700px;
+  flex-flow: wrap;
 }
 
 .pictureMobile {

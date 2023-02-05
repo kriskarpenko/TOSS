@@ -5,14 +5,32 @@
   border-radius: 50% / 0 0 100% 100%;
 }
 
-.header {
+.header,
+.headerLogo,
+.headerLogoMobile {
   background-color: #2e2e2e;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .header a {
-  color: #b0ab89;
+  color: #ccb88b;
+  text-transform: capitalize;
+}
+
+.headerLogo,
+.headerLogoMobile {
+  align-items: center;
+  margin-bottom: auto;
+  color: #ccb88b;
+  gap: 0.5rem;
+  height: 50px;
+  word-spacing: 0.2rem;
+}
+
+.headerLogoMobile {
+  width: 200px;
 }

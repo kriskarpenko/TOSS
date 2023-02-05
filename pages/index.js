@@ -16,7 +16,7 @@ export default function Home({}) {
           </p>
         </Section>
 
-        <Section pictureSrc="/img/photos/everyOneGarden.jpeg" />
+        <Section pictureSrc="/img/photos/everyOneGarden.jpeg" customClass="introduction" />
 
         <Section>
           <p>Located in the splendid setting of the western Ligurian Riviera.</p>
@@ -27,7 +27,7 @@ export default function Home({}) {
       <div id="information">
         <Section>
           <h3>Training offers:</h3>
-          <ul>
+          <ul className="offersUl">
             <li>Opera singing, modern singing.</li>
             <li>Stage art</li>
             <li>Practice of the vocal repertoire</li>
@@ -106,7 +106,7 @@ export default function Home({}) {
             and dissemination of the Art.
           </p>
           <h3>Our vision is:</h3>
-          <ul>
+          <ul className="offersUl">
             <li>Theatre performance</li>
             <li>Concerts</li>
             <li>Admission to the conservatory</li>
@@ -133,11 +133,12 @@ export default function Home({}) {
           </p>
         </Section>
         <Section pictureSrc="/img/photos/tatiana.jpeg">
-          <h2> Vocal Couch</h2>
+          <h2>Opera Stage art</h2>
           <p>
-            Tatyana Anisimova had finished the Odessa State conservatory by the name of A. V. Negdanova by the class of
-            professor G. A. Polivanova in 1992. Tatiana Anisimova was adopted in the collective of the Odessa State
-            Academic opera and ballet house at the same year.
+            Tatyana Anisimova carries out artistic activity for our students. She had finished the Odessa State
+            conservatory by the name of A. V. Negdanova by the class of professor G. A. Polivanova in 1992. Tatiana
+            Anisimova was adopted in the collective of the Odessa State Academic opera and ballet house at the same
+            year.
           </p>
           <p>
             Participation at theatres of Ukraine: Kiev, Lvov. She took part in a structure of the Ukrainian Delegacy
