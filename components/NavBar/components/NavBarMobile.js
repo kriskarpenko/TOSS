@@ -19,7 +19,7 @@ const NavBarMobile = () => {
       <button className={styles.menuButton} onClick={onMenuTogle}>
         {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
       </button>
-      {menuOpen && <MenuLinks className={styles.menuLinks} />}
+      <div>{menuOpen && <MenuLinks className={styles.menuLinks} />}</div>
     </div>
   );
 };

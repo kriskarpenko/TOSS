@@ -1,9 +1,13 @@
 import useMobile from '../../utils/useMobile';
 import styles from './Section.module.css';
 
-export const SectionDesktop = ({ children, pictureAfterText = false, pictureSrc, text }) => {
+export const SectionDesktop = ({ children, pictureAfterText = false, pictureSrc, text, customClass }) => {
   return (
-    <div className={`${styles.wrapper} ${styles.flexRow} ${pictureAfterText ? styles.pictureAfterText : ''}`}>
+    <div
+      className={`${styles.wrapper} ${styles.flexRow} ${
+        pictureAfterText ? styles.pictureAfterText : ''
+      } ${customClass}`}
+    >
       {pictureSrc && <img src={pictureSrc} className={styles.picture} />}
       <div className={styles.text}>{text || children}</div>
     </div>
