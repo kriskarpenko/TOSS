@@ -17,7 +17,7 @@
 }
 
 .header a {
-  color: #ccb88b;
+  color: #ccc38b;
   text-transform: capitalize;
 }
 
@@ -25,7 +25,7 @@
 .headerLogoMobile {
   align-items: center;
   margin-bottom: auto;
-  color: #ccb88b;
+  color: #ccc38b;
   gap: 0.5rem;
   height: 50px;
   word-spacing: 0.2rem;

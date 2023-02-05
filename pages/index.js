@@ -11,16 +11,12 @@ export default function Home({}) {
       <div id="introduction">
         <Section>
           <h1>{CONFIG.website.title}</h1>
-          <p>
-            A new generation singing school. A place where you can fullfil your dream with only one year of learning.
-          </p>
+          <p>New generation singing school. A place where you can fullfil your dream with only one year of learning.</p>
         </Section>
 
-        <Section pictureSrc="/img/photos/everyOneGarden.jpeg" customClass="introduction" />
-
-        <Section>
+        <Section pictureSrc="/img/photos/everyOneGarden.jpeg" customClass="introduction">
+          <p>It is a residential establishment with a concert hall including.</p>
           <p>Located in the splendid setting of the western Ligurian Riviera.</p>
-          <p>It is a residential with a concert hall including.</p>
         </Section>
       </div>
       <hr />
