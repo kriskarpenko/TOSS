@@ -14,8 +14,8 @@ const EventPage = () => {
         <h3>Mozart & Cervo Liguria </h3>
         <h3>Opéra Le nozze di Figaro </h3>
         <p>
-          Young talents and soloists of Tamara's Opera Singers School are taking part in the program “Le nozze di
-          Figaro”:
+          Young talents and soloists of Tamara&apos;s Opera Singers School are taking part in the program &quot;Le nozze di
+          Figaro&quot;:
         </p>
         <ul className="offersUl">
           <li>Vocal Couch - Tamara Tarskikh</li>
