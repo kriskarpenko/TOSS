@@ -4,7 +4,7 @@ import useMobile from '../utils/useMobile';
 const EventPage = () => {
   const isMobile = useMobile();
   return (
-    <div>
+    <div customClass="introduction">
       <Section>
         <h1>Events</h1>
         <h2>Upcoming event</h2>
@@ -14,8 +14,8 @@ const EventPage = () => {
         <h3>Mozart & Cervo Liguria </h3>
         <h3>Opéra Le nozze di Figaro </h3>
         <p>
-          Young talents and soloists of Tamara&apos;s Opera Singers School are taking part in the program &quot;Le nozze di
-          Figaro&quot;:
+          Young talents and soloists of Tamara&apos;s Opera Singers School are taking part in the program &quot;Le nozze
+          di Figaro&quot;:
         </p>
         <ul className="offersUl">
           <li>Vocal Couch - Tamara Tarskikh</li>
