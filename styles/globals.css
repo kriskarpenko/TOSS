@@ -68,6 +68,10 @@ iframe{
   flex-flow: wrap;
 }
 
+.introduction p, h1, h2, h3 {
+  text-align: -webkit-center;
+}
+
 .staff img{
 max-height: 450px;
 }
