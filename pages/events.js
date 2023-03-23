@@ -39,7 +39,7 @@ const EventPage = () => {
           <iframe
             width={!isMobile ? '848' : '300'}
             height={!isMobile ? '548' : '300'}
-            src="https://youtu.be/_yvnReCO43M"
+            src="https://www.youtube.com/embed/_yvnReCO43M"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
