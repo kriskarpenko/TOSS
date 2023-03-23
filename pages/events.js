@@ -34,6 +34,19 @@ const EventPage = () => {
       </Section>
       <Section>
         <h2>Past events</h2>
+        <Section customClass="introduction">
+          <h2>Concert Rehearsal</h2>
+          <iframe
+            width={!isMobile ? '848' : '300'}
+            height={!isMobile ? '548' : '300'}
+            src="https://youtu.be/_yvnReCO43M"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </Section>
+
         <div>
           <iframe
             src="https://player.vimeo.com/video/791868476?h=95842cd31f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
