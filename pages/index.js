@@ -137,8 +137,8 @@ export default function Home({}) {
             Opera and ballet house in the same year.
           </p>
           <p>
-           Participation at theatres of Ukraine: Kyiv, Lviv. She took part in a structure of the Ukrainian Delegacy “Mission of the Peace” in 1993. 
-           In 1995 the president of Ukraine L. Kuchma assigned her the rank “ The Honored Artist Of Ukraine”. In 1996 - participated in the competition of Alfred Kraus. 
+           Participation at theatres of Ukraine: Kyiv, Lviv. She took part in a structure of the Ukrainian Delegacy &quot;Mission of the Peace&quot; in 1993. 
+           In 1995 the president of Ukraine L. Kuchma assigned her the rank &quot;The Honored Artist Of Ukraine&quot;. In 1996 - participated in the competition of Alfred Kraus. 
            She had taken third place. She also took second place in the competition of opera singers in Bilbao, Spain.
           </p>
         </Section>
