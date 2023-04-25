@@ -65,10 +65,6 @@ export default function Home({}) {
          Singing is considered a purely musical element that affects positively the soul. 
          Those who sing are able to balance, control, and shake their inner world!
           </p>
-//           <p>
-//             T. Tarskikh &quot;the art of music and the development of the emotional, cognitive and psychological aspects
-//             of the individual&quot; Baccalaureato thesis in Psychology of Communication.
-//           </p>
           <p>
             Opera singers are required to maintain a strong motivation and a capacity for self-regulation to cope with
             the stress and anxiety related to working conditions and psychological pressures.
